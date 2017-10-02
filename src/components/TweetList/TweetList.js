@@ -2,7 +2,16 @@ import React from 'react';
 import Tweet from '../Tweet/Tweet';
 
 const TweetList = (props) => {
-  const tweets = props.tweets.map(tweet => <Tweet user={user} content={tweet.content}/>);
+  const tweets = props.user.tweets.map(tweet => {
+    return (
+      <Tweet
+        key={tweet.id}
+        user={props.user}
+        content={tweet.content}
+        reactions={tweet.reactions}
+      />
+    );
+  });
 
   return (
     <ul>

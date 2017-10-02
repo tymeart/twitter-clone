@@ -1,12 +1,13 @@
 import React from 'react';
+import UserAvatar from '../UserAvatar/UserAvatar';
 
-const Tweet = () => {
+const Tweet = (props) => {
   return (
     <li>
-      <UserAvatar />
-      <TweetHeading />
-      <TweetBody />
-      <TweetReactions />
+      <UserAvatar avatar={props.user.avatar} />
+      <TweetHeading givenName={props.user.givenName} />
+      <TweetBody content={props.content} />
+      <TweetReactions reactions={props.reactions} />
     </li>
   );
 }
