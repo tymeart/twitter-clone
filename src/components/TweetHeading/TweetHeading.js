@@ -1,12 +1,16 @@
 import React from 'react';
+import FontAwesome from 'react-fontawesome';
+import './TweetHeading.css';
 
 const TweetHeading = (props) => {
   return (
-    <div>
+    <div className="TweetHeading">
+      <span className="given-name">{props.givenName}</span>
       <span>@tymeart</span>
-      <span>{props.givenName}</span>
       <span>1hr</span>
-      <span>caret</span>
+      <FontAwesome
+        name="chevron-down"
+      />
     </div>
   );
 };

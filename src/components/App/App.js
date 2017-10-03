@@ -10,7 +10,7 @@ class App extends Component {
       user: {
         tymeart: {
           givenName: 'Tiffany',
-          avatar: {avatar},
+          avatar: avatar,
           tweets: [
           {
             id: 0,

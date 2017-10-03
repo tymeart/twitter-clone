@@ -1,0 +1,12 @@
+.Tweet {
+  background-color: #FFF;
+  border: 1px solid #E6ECF0;
+  color: #14171A;
+  display: flex;
+  list-style-type: none;
+  padding: 10px;
+
+  &:before {
+    content: "\200B"; /* add zero-width space for accessibility*/
+  }
+}
