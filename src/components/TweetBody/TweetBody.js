@@ -1,8 +1,9 @@
 import React from 'react';
+import './TweetBody.css'
 
 const TweetBody = (props) => {
   return (
-    <p>{props.content}</p>
+    <p className="TweetBody">{props.content}</p>
   );
 }
 

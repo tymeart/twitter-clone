@@ -9,7 +9,7 @@ const Tweet = (props) => {
   return (
     <li className="Tweet">
       <UserAvatar avatar={props.user.avatar} />
-      <span>
+      <span className="TweetText">
         <TweetHeading givenName={props.user.givenName} />
         <TweetBody content={props.content} />
         <TweetReactions reactions={props.reactions} />

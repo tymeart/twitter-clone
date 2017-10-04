@@ -7,6 +7,7 @@ const TweetReactions = (props) => {
       <FA name="comment-o"/><span>{props.reactions.comments}</span>
       <FA name="retweet" /><span>{props.reactions.retweets}</span>
       <FA name="heart-o" /><span>{props.reactions.likes}</span>
+      <FA name="bar-chart-o" />
     </div>
   );
 }

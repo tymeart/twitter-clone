@@ -1,9 +1,29 @@
 $gray: #657786;
 
 .TweetHeading {
-  color: $gray
+  color: $gray;
+  display: flex;
+  justify-content: space-between;
 }
 
 .fa {
   color: $gray;
+}
+
+.given-name {
+  color: #14171A;
+  font-weight: bold;
+}
+
+.name-and-time {
+  display: flex;
+  flex-grow: 1;
+
+  span {
+    margin-right: 3px;
+  }
+
+  .time:before {
+    content: "\00b7";
+  }
 }

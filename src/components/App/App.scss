@@ -1,21 +1,9 @@
 .App {
   background-color: #E6ECF0;
   display: flex;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
   height: 100vh;
   justify-content: center;
-
-  &-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
-  }
-
-  &-title {
-    font-size: 1.5em;
-  }
-
-  &-intro {
-    font-size: large;
-  }
+  line-height: 20px;
 }

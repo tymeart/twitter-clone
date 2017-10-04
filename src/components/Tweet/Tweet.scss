@@ -5,8 +5,13 @@
   display: flex;
   list-style-type: none;
   padding: 10px;
+  width: 70%;
 
   &:before {
     content: "\200B"; /* add zero-width space for accessibility*/
+  }
+
+  &Text {
+    width: 100%;
   }
 }
