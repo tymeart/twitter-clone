@@ -1,8 +1,8 @@
 import React from 'react';
 import UserAvatar from '../UserAvatar/UserAvatar';
-import TweetHeading from '../TweetHeading/TweetHeading';
-import TweetBody from '../TweetBody/TweetBody';
-import TweetReactions from '../TweetReactions/TweetReactions';
+import TweetHeading from './TweetHeading';
+import TweetBody from './TweetBody';
+import TweetReactions from './TweetReactions';
 import './Tweet.css';
 
 const Tweet = (props) => {

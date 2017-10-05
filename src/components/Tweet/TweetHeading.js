@@ -1,6 +1,6 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
-import './TweetHeading.css';
+import './Tweet.css';
 
 const TweetHeading = (props) => {
   return (

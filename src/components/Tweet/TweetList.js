@@ -1,5 +1,5 @@
 import React from 'react';
-import Tweet from '../Tweet/Tweet';
+import Tweet from './Tweet';
 
 const TweetList = (props) => {
   const tweets = props.user.tweets.reverse().map(tweet => {

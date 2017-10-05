@@ -1,7 +1,10 @@
+$gray: #657786;
+$black: #14171A;
+
 .Tweet {
   background-color: #FFF;
   border: 1px solid #E6ECF0;
-  color: #14171A;
+  color: $black;
   display: flex;
   list-style-type: none;
   padding: 10px;
@@ -13,5 +16,49 @@
 
   &Text {
     width: 100%;
+  }
+}
+
+.TweetHeading {
+  color: $gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa {
+  color: $gray;
+}
+
+.given-name {
+  color: $black;
+  font-weight: bold;
+}
+
+.name-and-time {
+  display: flex;
+  flex-grow: 1;
+
+  span {
+    margin-right: 3px;
+  }
+
+  .time:before {
+    content: "\00b7";
+  }
+}
+
+.TweetBody {
+  margin: 0;
+}
+
+.TweetReactions {
+  color: $gray;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 50%;
+
+  .fa {
+    margin-right: 10px;
   }
 }

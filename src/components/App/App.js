@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import avatar from './avatar.png';
-import TweetList from '../TweetList/TweetList';
+import TweetList from '../Tweet/TweetList';
 
 class App extends Component {
   constructor(props) {

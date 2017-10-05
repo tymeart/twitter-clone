@@ -1,6 +1,6 @@
 import React from 'react';
 import FA from 'react-fontawesome';
-import './TweetReactions.css';
+import './Tweet.css';
 
 const TweetReactions = (props) => {
   const commentsNum = props.reactions.comments === 0 ? null : props.reactions.comments;

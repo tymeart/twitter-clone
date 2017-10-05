@@ -1,5 +1,5 @@
 import React from 'react';
-import './TweetBody.css'
+import './Tweet.css'
 
 const TweetBody = (props) => {
   return (
