@@ -1,0 +1,11 @@
+.TweetReactions {
+  color: #657786;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 50%;
+
+  .fa {
+    margin-right: 10px;
+  }
+}
