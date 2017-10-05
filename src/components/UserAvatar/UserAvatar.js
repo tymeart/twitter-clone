@@ -1,5 +1,4 @@
 import React from 'react';
-import './UserAvatar.css';
 
 const UserAvatar = (props) => {
   return (

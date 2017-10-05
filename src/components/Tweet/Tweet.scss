@@ -19,6 +19,13 @@ $black: #14171A;
     content: "\200B"; /* add zero-width space for accessibility*/
   }
 
+  img {
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 10px;
+    width: 50px;
+  }
+
   &Text {
     width: 100%;
   }
