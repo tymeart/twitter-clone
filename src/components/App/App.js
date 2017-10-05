@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import avatar from './avatar.png';
+import AddTweetForm from '../AddTweetForm/AddTweetForm';
 import TweetList from '../Tweet/TweetList';
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <AddTweetForm avatar={this.state.user.tymeart.avatar}/>
         <TweetList user={this.state.user.tymeart}/>
       </div>
     );
