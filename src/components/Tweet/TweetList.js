@@ -14,7 +14,7 @@ const TweetList = (props) => {
   });
 
   return (
-    <ul>
+    <ul className="TweetList">
       {tweets}
     </ul>
   );
