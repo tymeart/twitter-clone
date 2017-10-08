@@ -7,7 +7,7 @@ const AddTweetForm = (props) => {
     <div className="AddTweetForm">
       <UserAvatar avatar={props.avatar}/>
       <form>
-        <input type="text" placeholder="What's happening?"/>
+        <textarea type="text" placeholder="What's happening?"/>
         <button>Tweet</button>
       </form>
     </div>
