@@ -8,6 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      tweetToAdd: '',
       user: {
         tymeart: {
           givenName: 'Tiffany',
@@ -37,10 +38,18 @@ class App extends Component {
     }
   }
 
+  handleInputChange = (e) => {
+    this.setState({tweetToAdd: e.target.value});
+  }
+
   render() {
     return (
       <div className="App">
-        <AddTweetForm avatar={this.state.user.tymeart.avatar}/>
+        <AddTweetForm
+          avatar={this.state.user.tymeart.avatar}
+          handleInputChange={this.handleInputChange}
+          tweetToAdd={this.state.tweetToAdd}
+        />
         <TweetList user={this.state.user.tymeart}/>
       </div>
     );

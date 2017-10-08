@@ -7,7 +7,13 @@ const AddTweetForm = (props) => {
     <div className="AddTweetForm">
       <UserAvatar avatar={props.avatar}/>
       <form>
-        <textarea type="text" placeholder="What's happening?"/>
+        <textarea
+          type="text"
+          placeholder="What's happening?"
+          handleInputChange={props.handleInputChange}
+        >
+          {props.tweetToAdd}
+        </textarea>
         <button>Tweet</button>
       </form>
     </div>
