@@ -42,6 +42,30 @@ class App extends Component {
     this.setState({tweetToAdd: e.target.value});
   }
 
+  handleAddTweet = () => {
+    const newTweet = {
+      id: this.state.user.tymeart.tweets.length,
+      content: this.state.tweetToAdd,
+      reactions: {
+        comments: 0,
+        retweets: 0,
+        likes: 0
+      }
+    };
+    const newState = {
+      user:{
+        ...this.state.user,
+        this.state.user.tymeart: {
+          ...this.state.user.tymeart,
+          tweets: [
+            ...this.state.user.tymeart.tweets,
+            newTweet
+          ]
+        }
+      }
+    };
+  }
+
   render() {
     return (
       <div className="App">
