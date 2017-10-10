@@ -9,6 +9,7 @@ class App extends Component {
     super(props);
     this.state = {
       tweetToAdd: '',
+      charCount: 140,
       user: {
         tymeart: {
           givenName: 'Tiffany',
@@ -39,7 +40,12 @@ class App extends Component {
   }
 
   handleInputChange = (e) => {
-    this.setState({tweetToAdd: e.target.value});
+    let charCount = e.target.value.length;
+    this.setState({
+      tweetToAdd: e.target.value,
+      charCount: 140 - charCount 
+    });
+
   }
 
   handleAddTweet = (e) => {
@@ -76,6 +82,7 @@ class App extends Component {
           avatar={this.state.user.tymeart.avatar}
           handleInputChange={this.handleInputChange}
           tweetToAdd={this.state.tweetToAdd}
+          charCount={this.state.charCount}
           handleAddTweet={this.handleAddTweet}
         />
         <TweetList user={this.state.user.tymeart}/>

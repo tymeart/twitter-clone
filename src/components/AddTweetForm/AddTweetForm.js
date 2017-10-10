@@ -13,7 +13,10 @@ const AddTweetForm = (props) => {
           value={props.tweetToAdd}
           onChange={props.handleInputChange}
         />
-        <button onClick={props.handleAddTweet}>Tweet</button>
+        <div className="charCount-btn-group">
+          <div className="charCount">{props.charCount}</div>
+          <button onClick={props.handleAddTweet}>Tweet</button>
+        </div>
       </form>
     </div>
   );
