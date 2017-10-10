@@ -1,12 +1,12 @@
 import React from 'react';
 import Tweet from './Tweet';
 
-const TweetList = (props) => {
-  const tweets = props.user.tweets.reverse().map(tweet => {
+const TweetList = ({ user }) => {
+  const tweets = [...user.tweets].reverse().map(tweet => {
     return (
       <Tweet
         key={tweet.id}
-        user={props.user}
+        user={user}
         content={tweet.content}
         reactions={tweet.reactions}
       />

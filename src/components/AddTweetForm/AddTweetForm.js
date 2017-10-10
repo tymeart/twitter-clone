@@ -10,10 +10,9 @@ const AddTweetForm = (props) => {
         <textarea
           type="text"
           placeholder="What's happening?"
-          handleInputChange={props.handleInputChange}
-        >
-          {props.tweetToAdd}
-        </textarea>
+          value={props.tweetToAdd}
+          onChange={props.handleInputChange}
+        />
         <button>Tweet</button>
       </form>
     </div>
