@@ -42,7 +42,8 @@ class App extends Component {
     this.setState({tweetToAdd: e.target.value});
   }
 
-  handleAddTweet = () => {
+  handleAddTweet = (e) => {
+    e.preventDefault();
     const newTweet = {
       id: this.state.user.tymeart.tweets.length,
       content: this.state.tweetToAdd,
@@ -53,9 +54,10 @@ class App extends Component {
       }
     };
     const newState = {
+      tweetToAdd: '',
       user:{
         ...this.state.user,
-        this.state.user.tymeart: {
+        tymeart: {
           ...this.state.user.tymeart,
           tweets: [
             ...this.state.user.tymeart.tweets,
@@ -64,6 +66,7 @@ class App extends Component {
         }
       }
     };
+    this.setState(newState);
   }
 
   render() {
@@ -73,6 +76,7 @@ class App extends Component {
           avatar={this.state.user.tymeart.avatar}
           handleInputChange={this.handleInputChange}
           tweetToAdd={this.state.tweetToAdd}
+          handleAddTweet={this.handleAddTweet}
         />
         <TweetList user={this.state.user.tymeart}/>
       </div>

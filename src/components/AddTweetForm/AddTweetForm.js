@@ -13,7 +13,7 @@ const AddTweetForm = (props) => {
           value={props.tweetToAdd}
           onChange={props.handleInputChange}
         />
-        <button>Tweet</button>
+        <button onClick={props.handleAddTweet}>Tweet</button>
       </form>
     </div>
   );
