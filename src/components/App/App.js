@@ -43,7 +43,7 @@ class App extends Component {
     let charCount = e.target.value.length;
     this.setState({
       tweetToAdd: e.target.value,
-      charCount: 140 - charCount 
+      charCount: 140 - charCount
     });
 
   }
@@ -61,6 +61,7 @@ class App extends Component {
     };
     const newState = {
       tweetToAdd: '',
+      charCount: 140,
       user:{
         ...this.state.user,
         tymeart: {
