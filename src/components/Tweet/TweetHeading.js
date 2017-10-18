@@ -1,6 +1,7 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import './Tweet.css';
+import Dropdown from '../Dropdown/Dropdown';
 
 const TweetHeading = (props) => {
   return (
@@ -14,6 +15,7 @@ const TweetHeading = (props) => {
         <FontAwesome
           name="chevron-down"
         />
+        <Dropdown />
       </span>
     </div>
   );

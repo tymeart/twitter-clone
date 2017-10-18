@@ -10,6 +10,7 @@ class App extends Component {
     this.state = {
       tweetToAdd: '',
       charCount: 140,
+      displayTweetOptions: false,
       user: {
         tymeart: {
           givenName: 'Tiffany',
@@ -45,7 +46,6 @@ class App extends Component {
       tweetToAdd: e.target.value,
       charCount: 140 - charCount
     });
-
   }
 
   handleAddTweet = (e) => {
@@ -74,6 +74,11 @@ class App extends Component {
       }
     };
     this.setState(newState);
+  }
+
+  handleTweetOptionButtonClick = () => {
+    let displayTweetOptions = this.state.displayTweetOptions === false ? true : false;
+    this.setState({displayTweetOptions});
   }
 
   render() {

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Dropdown.css';
 
 const Dropdown = () => {
   const options = [
@@ -8,10 +9,21 @@ const Dropdown = () => {
     'Pin to your profile page',
     'Delete Tweet'
   ];
-  const dropdownItems = options.map(option => <li key={option}>{option}</li>);
+  const dropdownItems = options.map(option => {
+    return (
+      <li
+        key={option}
+        className="DropdownItem"
+      >
+      {option}
+      </li>
+    );
+  });
 
   return (
-    {dropdownItems}
+    <ul className="Dropdown">
+      {dropdownItems}
+    </ul>
   );
 }
 

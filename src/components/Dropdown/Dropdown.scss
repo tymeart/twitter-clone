@@ -1,0 +1,12 @@
+.Dropdown {
+  display: flex;
+  flex-direction: column;
+
+  &Item {
+    list-style-type: none;
+    
+    &:before {
+      content: "\200B"; /* add zero-width space for accessibility*/
+    }
+  }
+}
