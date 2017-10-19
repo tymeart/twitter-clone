@@ -1,7 +1,7 @@
 import React from 'react';
 import Tweet from './Tweet';
 
-const TweetList = ({ user }) => {
+const TweetList = ({ user, handleTweetOptionButtonClick, displayTweetOptions }) => {
   const tweets = [...user.tweets].reverse().map(tweet => {
     return (
       <Tweet
@@ -9,6 +9,8 @@ const TweetList = ({ user }) => {
         user={user}
         content={tweet.content}
         reactions={tweet.reactions}
+        handleTweetOptionButtonClick={handleTweetOptionButtonClick}
+        displayTweetOptions={displayTweetOptions}
       />
     );
   });

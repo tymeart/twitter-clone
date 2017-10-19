@@ -10,7 +10,11 @@ const Tweet = (props) => {
     <li className="Tweet">
       <UserAvatar avatar={props.user.avatar} />
       <span className="TweetText">
-        <TweetHeading givenName={props.user.givenName} />
+        <TweetHeading
+          givenName={props.user.givenName}
+          handleTweetOptionButtonClick={props.handleTweetOptionButtonClick}
+          displayTweetOptions={props.displayTweetOptions}
+        />
         <TweetBody content={props.content} />
         <TweetReactions reactions={props.reactions} />
       </span>

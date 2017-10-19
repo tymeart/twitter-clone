@@ -91,7 +91,11 @@ class App extends Component {
           charCount={this.state.charCount}
           handleAddTweet={this.handleAddTweet}
         />
-        <TweetList user={this.state.user.tymeart}/>
+        <TweetList
+          user={this.state.user.tymeart}
+          handleTweetOptionButtonClick={this.handleTweetOptionButtonClick}
+          displayTweetOptions={this.state.displayTweetOptions}
+        />
       </div>
     );
   }

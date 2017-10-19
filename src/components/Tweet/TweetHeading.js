@@ -14,8 +14,9 @@ const TweetHeading = (props) => {
       <span className="chevron">
         <FontAwesome
           name="chevron-down"
+          onClick={props.handleTweetOptionButtonClick}
         />
-        <Dropdown />
+        {props.displayTweetOptions && <Dropdown />}
       </span>
     </div>
   );

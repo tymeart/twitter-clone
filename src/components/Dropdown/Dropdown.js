@@ -15,7 +15,7 @@ const Dropdown = () => {
         key={option}
         className="DropdownItem"
       >
-      {option}
+        {option}
       </li>
     );
   });
