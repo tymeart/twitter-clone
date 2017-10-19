@@ -61,6 +61,15 @@ $black: #14171A;
   }
 }
 
+.dropdown {
+  position: relative;
+
+  &-btn {
+    background: none;
+    border: none;
+  }
+}
+
 .TweetBody {
   margin: 0;
 }

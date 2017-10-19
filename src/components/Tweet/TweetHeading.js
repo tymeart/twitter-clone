@@ -11,11 +11,13 @@ const TweetHeading = (props) => {
         <span>@tymeart</span>
         <span className="time">1h</span>
       </span>
-      <span className="chevron">
-        <FontAwesome
-          name="chevron-down"
+      <span className="dropdown">
+        <button
+          className="dropdown-btn"
           onClick={props.handleTweetOptionButtonClick}
-        />
+        >
+          <FontAwesome name="chevron-down" />
+        </button>
         {props.displayTweetOptions && <Dropdown />}
       </span>
     </div>
