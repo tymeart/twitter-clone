@@ -62,7 +62,7 @@ class App extends Component {
     const newState = {
       tweetToAdd: '',
       charCount: 140,
-      user:{
+      user: {
         ...this.state.user,
         tymeart: {
           ...this.state.user.tymeart,
@@ -79,6 +79,22 @@ class App extends Component {
   handleTweetOptionButtonClick = () => {
     let displayTweetOptions = this.state.displayTweetOptions === false ? true : false;
     this.setState({displayTweetOptions});
+  }
+
+  handleDelete = (tweetId) => {
+    const newTweetList = this.state.user.tymeart.tweets.filter(tweet => {
+      return tweet.id !== tweetId;
+    });
+    const newState = {
+      user: {
+        ...this.state.user,
+        tymeart: {
+          ...this.state.user.tymeart,
+          tweets: newTweetList
+        }
+      }
+    }
+    this.setState(newState);
   }
 
   render() {

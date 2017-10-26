@@ -14,6 +14,7 @@ const Tweet = (props) => {
           givenName={props.user.givenName}
           handleTweetOptionButtonClick={props.handleTweetOptionButtonClick}
           displayTweetOptions={props.displayTweetOptions}
+          tweetId={props.key}
         />
         <TweetBody content={props.content} />
         <TweetReactions reactions={props.reactions} />

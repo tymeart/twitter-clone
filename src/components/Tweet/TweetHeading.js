@@ -18,7 +18,7 @@ const TweetHeading = (props) => {
         >
           <FontAwesome name="chevron-down" />
         </button>
-        {props.displayTweetOptions && <Dropdown />}
+        {props.displayTweetOptions && <Dropdown tweetId={props.tweetId}/>}
       </span>
     </div>
   );
